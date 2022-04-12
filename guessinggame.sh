@@ -1,7 +1,4 @@
-
-#!/usr/bin/env bash
-
-function guess(){
+function guessing_game(){
     answer=$(ls -l |grep "^-"|wc -l)
     while true;
     do
@@ -20,4 +17,4 @@ function guess(){
     done
 }
 echo "guess the file number"
-guess
+guessing_game
